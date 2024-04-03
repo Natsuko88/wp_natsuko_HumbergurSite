@@ -1,0 +1,23 @@
+.p-list{
+    margin-bottom: 40px;
+    .p-list--none{
+        font-weight: 400;
+        margin:20px 0;
+    
+        .p-list--none--li{
+            list-style: none;
+            line-height: 1.5;
+            margin-left: 2vw;
+        }
+    }
+    .p-list--none--i{
+        font-weight: 400;
+        margin:20px 0;
+    
+        .p-list--none--li{
+            list-style: none;
+            line-height: 1.5;
+            margin-left: 6vw;
+        }
+    }
+}

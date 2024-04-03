@@ -1,0 +1,23 @@
+@use "../../foundation/" as f;
+.c-content-title{
+    position:relative;
+    text-transform: capitalize;
+    color:f.$color-white;
+
+    /*アンダーバー*/
+   &::before {
+        content:"";
+        display:inline-block;
+        width:10%;
+        height:4px;
+        background-color: f.$color-white;
+        position:absolute; 
+        bottom:-50%;
+    }
+}
+
+@include f.pc{
+    .c-content-title::before{
+        width:19%;
+    }
+}

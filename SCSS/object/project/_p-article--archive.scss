@@ -1,0 +1,24 @@
+@use "../../foundation/" as f;
+
+.p-article--archive{
+    margin: 4vw;
+
+    .c-sub-title{
+        padding:10px 10px 10px 0;
+        font-size: 28px;
+    }
+    .c-sub-article{
+        padding:10px 10px 10px 0;
+    }
+}
+
+/*tab*/
+@include f.tab{
+    .p-article--archive{
+        .c-sub-title{
+            font-size: 36px;
+        }
+
+
+    }
+}

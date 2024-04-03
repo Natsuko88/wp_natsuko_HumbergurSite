@@ -1,0 +1,45 @@
+@use "../../foundation/" as f;
+
+.p-sidebar{
+    color:f.$color-gray;
+    position: relative;
+    z-index:100;
+
+    .c-button--menu{
+        margin: 84px 46px;
+        font-size: 3.4rem;
+        line-height:2;
+        display:none;
+    }
+
+    @include f.pc{
+        .c-button--menu{
+            display: block;
+        }
+    }
+
+    .p-menu-title{
+        margin:84px 46px;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    .p-menu-sub{
+        margin:25px 66px;
+        font-size: 2rem;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+
+    .c-button--menu.is-active{
+        /*Menuのみ消す*/
+        visibility: none;
+        left:80%;
+        position: relative;
+        z-index:110;
+        margin: 10px;
+        width: 100%;
+
+    }
+    /*メニューボタンここまで*/
+}

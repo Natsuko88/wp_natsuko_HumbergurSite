@@ -1,0 +1,46 @@
+@use "../../foundation/" as f;
+
+.p-pagenation{
+    display: flex;
+    color:f.$color-gray;
+    justify-content: space-between;
+    
+
+    .c-pagenation-head{
+        display: none;
+    }
+
+    .c-button--pagenation{
+        margin:10px;
+    }
+
+    .p-pagenation-list{
+        display: none;
+    }
+
+    .c-pagenation,.u-pagenation{
+        margin:10px;
+        padding:10px;
+    }
+    
+}
+/*tab*/
+@include f.tab{
+    .p-pagenation{
+        align-items: center;
+        justify-content: center;
+        margin:20px;
+        .p-pagenation-list{
+            display: flex;
+            margin:10px;
+        }
+        .c-pagenation-head{
+            display: block;
+        }
+        .c-button--page-text{
+            display:none;
+        }
+
+
+    }
+}

@@ -1,0 +1,11 @@
+@use "../../foundation/" as f;
+
+.c-wrapper-main{
+    width: 100vw;
+    position:relative;
+    //pc
+    @include f.pc{
+        width:81%;
+    }
+    
+}

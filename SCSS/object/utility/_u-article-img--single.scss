@@ -1,0 +1,20 @@
+@use "../../foundation/" as f;
+
+.u-article-img--single{
+    display:block;
+    text-align: center;
+    margin:30px 0 60px 0;
+    padding-bottom: 60px;
+
+    img{
+        max-width: 92vw;
+        aspect-ratio: 581/385;
+    }
+}
+
+//pc
+@include f.pc{
+    .u-article-img--single{
+        margin:30px;
+    } 
+}

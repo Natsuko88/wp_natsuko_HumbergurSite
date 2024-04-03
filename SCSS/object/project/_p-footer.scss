@@ -1,0 +1,26 @@
+@use "../../foundation/" as f;
+
+.p-footer{
+    text-align: center;
+    .p-footer-link{
+
+        .c-footer-link, .c-footer-link--history{
+            display:inline-block;
+            margin:0 10px;
+            padding:30px 0;
+            position:relative;
+            color:f.$color-white;
+            font-weight: 400;
+        }
+
+        .c-footer-link--history::before{
+            content:"";
+            width:1px;
+            height:20px;
+            position:absolute;
+            background-color:f.$color-white;
+            left:-10px;
+        }
+
+    }  
+}

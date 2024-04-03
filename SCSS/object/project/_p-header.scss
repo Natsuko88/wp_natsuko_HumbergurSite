@@ -1,0 +1,121 @@
+@use "../../foundation/" as f;
+
+.p-header{
+    .c-button--menu{
+        display: block;
+        font-size: 20px;
+        line-height:1.5;
+        margin:0 0 0 auto;
+        position:relative;
+        z-index:120;
+        transition: all .6s;
+    }
+
+     /*menuボタン*/
+    .c-button--menu::before{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray;
+        position:absolute;
+        visibility: hidden;
+        z-index:120;
+        display: block;
+        
+    }
+    
+    .c-button--menu::after{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray ;
+        position:absolute;
+        visibility: hidden;
+        z-index:120;
+        display: block;
+        
+    }
+    
+    .c-button--menu.is-active{
+        /*Menuのみ消す*/
+        color:f.$color-darkbage;
+        left:90%;
+        position: relative;
+        z-index:120;
+        width: 100%;
+    }
+
+    .c-button--menu.is-active::before{
+        visibility: visible;
+        transform:rotate(45deg);
+        top:50%;
+        z-index: 120;
+    }
+    .c-button--menu.is-active::after{
+        visibility: visible;
+        transform:rotate(-45deg);
+        bottom:45%;
+        z-index: 120;
+    }
+
+
+    /*メニューボタンここまで*/
+    
+    
+    .p-logo{
+        font-size:40px;
+        margin:10px;
+        text-align: center;
+    }
+    
+    .p-serch{
+        margin: 10px;
+
+        .p-serchform{
+                height:46px;
+                margin:5px 0;
+                width:60vw;
+            }
+        .c-button--serch{
+            margin:5px 10px;
+            height:46px;
+            width:15vw;
+        }
+        
+    }
+    //tab
+    @include f.tab{
+        .c-button--menu{
+            font-size:40px;
+            padding:15px 20px 0 15px;
+        }
+        .p-serchform{
+            width:50vw
+        }
+    }
+    //pc
+    @include f.pc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /*MenuボタンPCはdisplay:none;*/
+        .c-button--menu{
+            display:none;
+        }
+        .p-logo{
+            margin:20px 20px 20px 65px;
+            width:15vw;
+            height:75px;
+            font-size:64px;
+        }
+        .p-serch{
+            .p-serchform{
+                    width:20vw;
+                }
+            .c-button--serch{
+                width:5vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "../../foundation/" as f;
+
+.p-single-img--top{
+    width: 92vw;
+    object-fit: cover;
+    margin:30px 0;
+}
+
+@include f.pc{
+    .p-single-img--top{
+        width:72vw;
+    }
+}

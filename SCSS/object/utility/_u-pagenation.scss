@@ -1,0 +1,6 @@
+@use "../../foundation/" as f;
+
+.u-pagenation{
+    background-color: f.$color-letterblack;
+    color: f.$color-white;
+}

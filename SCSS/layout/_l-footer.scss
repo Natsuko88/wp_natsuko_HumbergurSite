@@ -1,0 +1,7 @@
+@use "../foundation/" as f;
+
+.l-footer{
+    height:150px;
+    width:100%;
+    background-color: f.$color-brown;
+}

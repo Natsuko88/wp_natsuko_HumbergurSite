@@ -1,0 +1,29 @@
+//color
+$color-gray: #707070;
+$color-bage: #FFF7EF;
+$color-darkbage: #F2EDE9;
+$color-lightgray: #DED8D3;
+$color-white: #FFFFFF;
+$color-ivory: #EAEAEA;
+$color-letterblack:#3C2A10;
+$color-black:#000000;
+$color-brown:#9D8670;
+$color-darkbrown:#3C2B1C;
+$color-bluegray:#F5F5F5;
+
+
+//breakPoint
+$PC:1025px;
+$tab:480px;
+
+@mixin pc{
+    @media screen and(min-width:($PC)){
+        @content;
+    }
+}
+
+@mixin tab{
+    @media screen and(min-width:($tab)){
+        @content;
+    }
+}

@@ -1,0 +1,19 @@
+.p-card--single{
+    display: flex;
+    align-items: flex-start;
+
+    .c-article-img--single{
+        width:40%;
+        padding:10px;
+        object-fit: contain;
+    }
+
+    .p-card--single--article{
+        padding:10px;
+        font-weight: 400;
+    }
+}
+
+.p-card--single--rightimg{
+    flex-direction: row-reverse;
+}

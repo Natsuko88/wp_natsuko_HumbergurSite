@@ -1,0 +1,15 @@
+@use "../../foundation/"as f;
+
+.c-location-title{
+    color:f.$color-white;
+
+    /*アンダーバー*/
+    ::after{
+        content:"";
+        width:75px;
+        height:2px;
+        background-color: f.$color-white;
+        position:absolute;
+    }
+
+}

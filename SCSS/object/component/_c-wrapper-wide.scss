@@ -1,0 +1,16 @@
+@use "../../foundation/" as f;
+
+.c-wrapper-wide{
+    position:relative;
+    overflow-x: hidden;
+    display:flex;
+}
+
+
+//PC
+@include f.pc{
+    .c-wrapper-wide{
+        display:flex;
+    }
+    
+}

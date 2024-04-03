@@ -1,0 +1,20 @@
+@use "../../foundation/" as f;
+
+.u-button--l{
+    width:92vw;
+    height:100px;
+    margin-bottom: 30px;;
+}
+//tab
+@include f.tab{
+    .u-button--l{
+        width:50%;
+    }
+}
+//pc
+@include f.pc{
+    .u-button--l{
+        width:33%;
+    }
+
+}

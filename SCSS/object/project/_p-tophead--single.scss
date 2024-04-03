@@ -1,0 +1,29 @@
+@use "../../foundation/" as f;
+.p-tophead--single{
+    background-image: url(../../../img/ham-burger-with-vegetables-1639557.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height:225px;
+    display: flex;
+    align-items: center;
+
+    .c-page-title{
+        margin-left: 4vw;
+        font-size: 36px;
+    }
+}
+//tab
+@include f.tab{
+    .p-tophead--single{
+        height:505px;
+        .c-page-title{
+            font-size: 60px;
+        }
+    }
+}
+//pc
+@include f.pc{
+    .p-tophead--single{
+        height: 285px;
+    }
+}

@@ -1,0 +1,19 @@
+@use "../../foundation/" as f;
+
+.u-button--pagenation{
+    display: block;
+    img{
+        transform: rotate(-180deg);
+    }
+    
+}
+
+
+/*pc*/
+@include f.pc{
+    .u-button--pagenation{
+        display: none;
+    }
+}
+
+

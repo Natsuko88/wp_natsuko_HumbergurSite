@@ -1,0 +1,30 @@
+@use "../../foundation/" as f;
+.p-tophead--page{
+    background-image: url(../../../img/black-steel-lamp-post-1070945.jpg);
+    background-size: cover;
+    object-fit: cover;
+    height:225px;
+    display: flex;
+    align-items: center;
+
+    .c-page-title{
+        margin-left: 4vw;
+        font-size: 36px;
+    }
+}
+//tab
+@include f.tab{
+    .p-tophead--page{
+        height:505px;
+        .c-page-title{
+            font-size: 60px;
+        }
+    }
+}
+
+//pc
+@include f.pc{
+    .p-tophead--page{
+        height: 285px;
+    }
+}

@@ -1,0 +1,30 @@
+@use "../../foundation/" as f;
+
+.p-table,tr,th{
+    border: 1px solid f.$color-black;
+    border-collapse	:collapse
+}
+
+.p-table{
+    margin:30px 0;
+    width: 92vw;
+    
+    .p-tableh-1{
+        width: 33%;
+    }
+
+    th{
+        font-weight: 400;
+        height: 77px;
+        text-align: start;
+        padding:0 20px;
+    }
+}
+
+//pc
+@include f.pc{
+    .p-table{
+        width: 72vw;
+    }
+
+}

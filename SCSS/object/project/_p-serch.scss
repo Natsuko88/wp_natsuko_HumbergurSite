@@ -1,0 +1,13 @@
+@use "../../foundation/" as f;
+
+.p-serch{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@include f.pc{.p-serch{
+    display:flex;
+    align-items: center;
+}
+}

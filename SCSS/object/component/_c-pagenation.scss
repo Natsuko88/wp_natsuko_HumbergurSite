@@ -1,0 +1,7 @@
+@use "../../foundation/" as f;
+
+.c-pagenation{
+    display: inline;
+    color:f.$color-gray;
+    border:1px solid;
+}

@@ -1,0 +1,53 @@
+@use "../../foundation/" as f;
+
+.p-location{
+    background:  linear-gradient(rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    background-size: cover;
+    height: auto;
+
+    .p-location-content{
+        width:100%;
+
+        .c-content-title{
+            font-size:30px;
+            padding:5%;
+
+            &::before{
+                width:7%;
+                bottom:-1%;
+                height:2px;
+            }
+        }
+
+        .c-location-article{
+            padding:5%;
+            line-height:2;
+        }
+    }
+}
+//tab
+@include f.tab{
+    .p-location{
+        background:  linear-gradient(rgb(5,5,5,0.2855),rgb(5,5,5,0.2855)),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    //レイヤーは疑似要素に変えてもよい
+        .c-content-title{
+            font-size:36px;
+        }
+    }
+}
+
+//pc
+@include f.pc{
+    .p-location{
+        background:  linear-gradient(to right,rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    //レイヤーは疑似要素に変えてもよい
+        .p-location-content{
+            width:61%;
+
+            .c-content-title::before{
+                bottom: -10%;
+            }
+        }
+
+    }
+}

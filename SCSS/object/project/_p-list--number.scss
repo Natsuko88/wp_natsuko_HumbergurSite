@@ -1,0 +1,23 @@
+.p-list{
+    margin-bottom: 40px;
+    .p-list--number{
+        font-weight: 400;
+        margin:20px 0;
+    
+        .p-list--number--li{
+            list-style: decimal;
+            line-height: 1.5;
+            margin-left: 4vw;
+        }
+    }
+    .p-list--number--i{
+        font-weight: 400;
+        margin:20px 0;
+    
+        .p-list--number--li{
+            list-style: decimal;
+            line-height: 1.5;
+            margin-left: 8vw;
+        }
+    }
+}

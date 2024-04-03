@@ -1,0 +1,7 @@
+@use "../../foundation/" as f;
+
+.c-button--detail{
+    background-color: f.$color-white;
+    color: f.$color-gray;
+    border-radius:100vh;
+}

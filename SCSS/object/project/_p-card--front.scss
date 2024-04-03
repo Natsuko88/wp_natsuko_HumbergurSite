@@ -1,0 +1,14 @@
+@use "../../foundation/" as f;
+.p-card--front{
+    margin:10px;
+    padding:10px;
+    background-color: f.$color-white;
+    opacity: 0.7979;
+    max-width:585px;
+
+
+    .c-card-title{
+        font-size: 24px;
+        line-height:2;
+    }
+}

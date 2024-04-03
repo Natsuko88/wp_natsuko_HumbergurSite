@@ -1,0 +1,8 @@
+@use "../../foundation/" as f;
+
+.c-content-title--archive{
+
+    &::before{
+        display: none;
+    }
+}

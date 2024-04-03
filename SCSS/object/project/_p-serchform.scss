@@ -1,0 +1,24 @@
+.p-serchform{
+    position:relative;
+    background-color: f.$color-white;
+    border: 1px solid;
+    border-color: f.$color-gray;
+    border-radius: 10px;
+    display:block;
+
+    /*虫眼鏡マークは疑似要素*/
+    &::before{
+        content: url(../../img/serch.png);
+        display:inline-block;
+        width:auto;
+        height:auto;
+        position:absolute;
+        padding:15px;
+    }
+
+   input{
+    margin-left:60px;
+    height:46px;
+    width:15vw;
+   }
+}

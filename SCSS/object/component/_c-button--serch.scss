@@ -1,0 +1,9 @@
+@use "../../foundation/" as f;
+
+.c-button--serch{
+    background-color: f.$color-lightgray;
+    color: f.$color-gray;
+    border-radius: 10px;
+    border:1px solid;
+    border-color: linear-gradient(f.$color-darkbage, f.$color-gray);
+}
