@@ -1,9 +1,10 @@
-@use "../../foundation/" as f;
+@use "../../foundation/f-index" as f;
 
 .p-serch{
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 @include f.pc{.p-serch{

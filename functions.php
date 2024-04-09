@@ -21,5 +21,7 @@
         wp_enqueue_style('preconnect_origin', 'https://fonts.gstatic.com',array());
         wp_enqueue_style('m+plus1','https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap',array());
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
+        wp_enqueue_script('mainjs',get_template_directory_uri() .'/main.js', array(), '1.0.0',true);
     }
     add_action('wp_enqueue_scripts','natsukohumbergur_script');
+    

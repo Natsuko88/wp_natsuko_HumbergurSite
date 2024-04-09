@@ -18,4 +18,5 @@
                 </h1>
                 <p class="c-header--description"><?php bloginfo( 'description' ); ?></p>
                 <?php get_search_form();?>
+                <div class="p-black-layer"></div><!--スライドメニュー出現後のレイヤー-->
             </header>

@@ -1,10 +1,7 @@
+@use "../../foundation/f-index" as f;
+
 .p-serchform{
     position:relative;
-    background-color: f.$color-white;
-    border: 1px solid;
-    border-color: f.$color-gray;
-    border-radius: 10px;
-    display:block;
 
     /*虫眼鏡マークは疑似要素*/
     &::before{
@@ -16,9 +13,28 @@
         padding:15px;
     }
 
-   input{
-    margin-left:60px;
+    .p-search-form__keyword{
     height:46px;
-    width:15vw;
+    width:40vw;
+    background-color: f.$color-white;
+    border: 1px solid;
+    border-color: f.$color-gray;
+    border-radius: 10px;
+    padding-left: 60px;
    }
+}
+
+form .p-serchform{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@include f.pc{
+    .p-serchform{
+        .p-search-form__keyword{
+            width:15vw;
+        }
+    }
+    
 }

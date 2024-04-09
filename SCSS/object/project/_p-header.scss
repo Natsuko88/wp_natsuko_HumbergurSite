@@ -1,4 +1,4 @@
-@use "../../foundation/" as f;
+@use "../../foundation/f-index" as f;
 
 .p-header{
     .c-button--menu{
@@ -81,7 +81,10 @@
             height:46px;
             width:15vw;
         }
-        
+    }
+    form .p-serchform{
+        width:30vw;
+        margin-left: 60px;
     }
     //tab
     @include f.tab{
@@ -91,6 +94,9 @@
         }
         .p-serchform{
             width:50vw
+        }
+        form .p-serchform{
+            width:20vw;
         }
     }
     //pc
@@ -111,7 +117,7 @@
         }
         .p-serch{
             .p-serchform{
-                    width:20vw;
+                    width:25vw;
                 }
             .c-button--serch{
                 width:5vw;
