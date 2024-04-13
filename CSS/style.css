@@ -16,6 +16,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
+  margin: 0;
 }
 
 body.is-active {
@@ -95,6 +96,9 @@ li {
 
 .c-button--menu {
   color: #707070;
+  border: none;
+  background-color: transparent;
+  font-weight: 700;
 }
 
 .p-logo {
@@ -126,7 +130,7 @@ li {
 }
 
 .p-tophead {
-  background-image: url(../../../img/mainvisual-sp.jpg);
+  background-image: url(../img/mainvisual-pc.jpg);
   background-size: cover;
   height: 285px;
   display: flex;
@@ -138,12 +142,12 @@ li {
 
 @media screen and (min-width: 480px) {
   .p-tophead {
-    background-image: url(../../../img/mainvisual-tab.jpg);
+    background-image: url(../img/mainvisual-tab.jpg);
   }
 }
 @media screen and (min-width: 1025px) {
   .p-tophead {
-    background-image: url(../../../img/mainvisual-pc.jpg);
+    background-image: url(../img/mainvisual-sp.jpg);
     height: 530px;
   }
 }
@@ -197,11 +201,6 @@ li {
 }
 
 .p-menu-sub {
-  font-weight: 400;
-}
-
-.c-footer-link {
-  color: #FFFFFF;
   font-weight: 400;
 }
 
@@ -326,7 +325,7 @@ li {
   /*虫眼鏡マークは疑似要素*/
 }
 .p-serchform::before {
-  content: url(../../img/serch.png);
+  content: url(../img/serch.png);
   display: inline-block;
   width: auto;
   height: auto;
@@ -339,8 +338,9 @@ li {
   background-color: #FFFFFF;
   border: 1px solid;
   border-color: #707070;
+  color: #707070;
   border-radius: 10px;
-  padding-left: 60px;
+  padding: 0 10px 0 60px;
 }
 
 form .p-serchform {
@@ -382,7 +382,7 @@ form .p-serchform {
   }
 }
 .p-content--front--to {
-  background-image: url(../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
+  background-image: url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
   max-width: 480px;
   margin: 10px;
@@ -412,7 +412,7 @@ form .p-serchform {
 }
 
 .p-content--front--ei {
-  background-image: url(../../img/oneburgerandpotate.jpg);
+  background-image: url(../img/oneburgerandpotate.jpg);
   background-size: cover;
   max-width: 480px;
   margin: 10px;
@@ -430,7 +430,7 @@ form .p-serchform {
   }
 }
 .p-location {
-  background: linear-gradient(rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background: linear-gradient(rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
   height: auto;
 }
@@ -453,7 +453,7 @@ form .p-serchform {
 
 @media screen and (min-width: 480px) {
   .p-location {
-    background: linear-gradient(rgba(5, 5, 5, 0.2855), rgba(5, 5, 5, 0.2855)), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    background: linear-gradient(rgba(5, 5, 5, 0.2855), rgba(5, 5, 5, 0.2855)), url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   }
   .p-location .c-content-title {
     font-size: 36px;
@@ -461,7 +461,7 @@ form .p-serchform {
 }
 @media screen and (min-width: 1025px) {
   .p-location {
-    background: linear-gradient(to right, rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   }
   .p-location .p-location-content {
     width: 61%;
@@ -487,16 +487,20 @@ form .p-serchform {
     display: block;
   }
 }
-.p-sidebar .p-menu-title {
-  margin: 84px 46px;
+.p-sidebar ul {
+  margin: 84px 0;
   font-size: 2.4rem;
   line-height: 1.5;
 }
-.p-sidebar .p-menu-sub {
-  margin: 25px 66px;
+.p-sidebar li {
+  margin: 30px;
   font-size: 2rem;
   line-height: 1.5;
   white-space: nowrap;
+  font-weight: 400;
+}
+.p-sidebar li strong {
+  font-weight: 700;
 }
 .p-sidebar .c-button--menu.is-active {
   /*Menuのみ消す*/
@@ -511,7 +515,14 @@ form .p-serchform {
 .p-footer {
   text-align: center;
 }
-.p-footer .p-footer-link .c-footer-link, .p-footer .p-footer-link .c-footer-link--history {
+.p-footer ul {
+  display: flex;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 0;
+  justify-content: center;
+}
+.p-footer ul li {
   display: inline-block;
   margin: 0 10px;
   padding: 30px 0;
@@ -519,7 +530,7 @@ form .p-serchform {
   color: #FFFFFF;
   font-weight: 400;
 }
-.p-footer .p-footer-link .c-footer-link--history::before {
+.p-footer ul li:last-child::before {
   content: "";
   width: 1px;
   height: 20px;
@@ -574,7 +585,7 @@ form .p-serchform {
 }
 
 .p-tophead--archive {
-  background-image: url(../../../img/page-title_arcive.jpg);
+  background-image: url(../img/page-title_arcive.jpg);
   background-size: cover;
   height: 285px;
   display: flex;
@@ -776,7 +787,7 @@ form .p-serchform {
 }
 
 .p-tophead--single {
-  background-image: url(../../../img/ham-burger-with-vegetables-1639557.jpg);
+  background-image: url(../img/ham-burger-with-vegetables-1639557.jpg);
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1007,7 +1018,7 @@ form .p-serchform {
 }
 
 .p-tophead--page {
-  background-image: url(../../../img/black-steel-lamp-post-1070945.jpg);
+  background-image: url(../img/black-steel-lamp-post-1070945.jpg);
   background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;

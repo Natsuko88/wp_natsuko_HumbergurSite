@@ -1,12 +1,8 @@
-<?php wp_footer(); ?>
+
 <footer class="l-footer p-footer">
-        <p class="p-footer-link">
-            <a href="#" class="c-footer-link">ショップ情報 </a>
-            <a Href="#" class="c-footer-link--history">ヒストリー</a> 
-        </p>
-        <p class="p-copyright"><small>Copyright:RaiseTech</small></p>
-    </footer>
-    
-    <script src="main.js"></script>
+<?php wp_nav_menu( array( 'theme_location' => 'footer-nav' ) ); ?>
+    <p class="p-copyright"><small>Copyright:RaiseTech</small></p>
+</footer>
+<?php wp_footer(); ?>
 </body>
 </html>

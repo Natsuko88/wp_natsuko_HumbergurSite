@@ -1,7 +1,7 @@
 <?php
     //テーマサポート
-    add_theme_support('menus');
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 
     //タイトル出力
     function natsuko_humbergur_title($title){
@@ -14,6 +14,15 @@
     }
     add_filter('pre_get_document_title','natsuko_humbergur_title');
 
+    //メニューの出力(フッター)
+    add_action( 'after_setup_theme', function(){
+        register_nav_menus( array(
+        // 例 'メニューの位置を示す固有名称' => 'このメニューの位置の名称'
+        'footer-nav' => 'フッターメニュー',
+        ) );
+      } );
+
+    //script,style
     function natsukohumbergur_script(){
         wp_enqueue_style('ress','https://unpkg.com/ress/dist/ress.min.css',array());
         wp_enqueue_style('style',get_template_directory_uri().'/css/style.css',array());
@@ -25,3 +34,18 @@
     }
     add_action('wp_enqueue_scripts','natsukohumbergur_script');
     
+    //ウィジェット
+    function natsukohumbergur_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'カテゴリーウィジェット',
+                'id'            => 'category_widget',
+                'description'   => 'カテゴリー用ウィジェットです',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+                'after_title'   => "</h2>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'natsukohumbergur_widgets_init' );

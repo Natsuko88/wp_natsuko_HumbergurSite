@@ -1,7 +1,7 @@
 @use "../../foundation/f-index" as f;
 
 .p-location{
-    background:  linear-gradient(rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+    background:  linear-gradient(rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
     background-size: cover;
     height: auto;
 
@@ -28,7 +28,7 @@
 //tab
 @include f.tab{
     .p-location{
-        background:  linear-gradient(rgb(5,5,5,0.2855),rgb(5,5,5,0.2855)),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+        background:  linear-gradient(rgb(5,5,5,0.2855),rgb(5,5,5,0.2855)),url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
     //レイヤーは疑似要素に変えてもよい
         .c-content-title{
             font-size:36px;
@@ -39,7 +39,7 @@
 //pc
 @include f.pc{
     .p-location{
-        background:  linear-gradient(to right,rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+        background:  linear-gradient(to right,rgb(5, 5, 5, 0.5971) 61%,rgb(5,5,5,0.2855) 61% 39%),url(../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
     //レイヤーは疑似要素に変えてもよい
         .p-location-content{
             width:61%;

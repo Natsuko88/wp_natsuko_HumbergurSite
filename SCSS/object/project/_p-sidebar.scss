@@ -18,17 +18,22 @@
         }
     }
 
-    .p-menu-title{
-        margin:84px 46px;
+    ul{
+        margin:84px 0;
         font-size: 2.4rem;
         line-height: 1.5;
     }
 
-    .p-menu-sub{
-        margin:25px 66px;
+    li{
+        margin:30px;
         font-size: 2rem;
         line-height: 1.5;
         white-space: nowrap;
+        font-weight: 400;
+    }
+
+    li strong{
+        font-weight: 700;
     }
 
     .c-button--menu.is-active{
