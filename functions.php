@@ -1,7 +1,24 @@
 <?php
     //テーマサポート
-    add_theme_support('title-tag');
-    add_theme_support('post-thumbnails');
+    function custom_theme_support(){
+        add_theme_support('html5',array(
+            'search-form',
+            'comment-form',
+            'comment-list',
+            'gallery',
+            'caption',
+        ));
+        add_theme_support('title-tag');
+        add_theme_support('post-thumbnails');
+        add_theme_support('menus');
+        register_nav_menus(array(
+            'footer_nav' =>esc_html__('footer navigation','natsuko_humbergur'),
+            'category_nav' =>esc_html__('category navigation','natsuko_humbergur'),
+        ));
+        add_theme_support('editor-styles');
+        add_editor_style();
+    }
+    add_action('after_setup_theme','custom_theme_support');
 
     //タイトル出力
     function natsuko_humbergur_title($title){
@@ -14,13 +31,6 @@
     }
     add_filter('pre_get_document_title','natsuko_humbergur_title');
 
-    //メニューの出力(フッター)
-    add_action( 'after_setup_theme', function(){
-        register_nav_menus( array(
-        // 例 'メニューの位置を示す固有名称' => 'このメニューの位置の名称'
-        'footer-nav' => 'フッターメニュー',
-        ) );
-      } );
 
     //script,style
     function natsukohumbergur_script(){
