@@ -13,14 +13,22 @@
         margin:10px;
     }
 
-    .c-content-title--sub{
+    h4{
         margin:5px 10px;
         font-size: 16px;
+        color:f.$color-white;
     }
 
-    .c-card-article--archive{
+    p{
         margin:10px 10px;
+        color:f.$color-white;
+        font-weight: 400;
     }
+
+    .wp-block-read-more{
+        display:none;
+    }
+
     .c-button--detail{
         height: 40px;
         width: 50%;
@@ -38,11 +46,11 @@
             margin:20px;
         }
 
-        .c-content-title--sub{
+        h4{
             margin:10px 20px;
             font-size: 24px;
         }
-        .c-card-article--archive{
+        p{
             margin:20px 20px;
         }
         .c-button--detail{

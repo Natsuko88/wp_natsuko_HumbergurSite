@@ -5,68 +5,49 @@
                         <h2 class="c-page-title">
                             Menu:
                         </h2>
-                        <p class="u-page-title--sub">チーズバーガー</p>
+                        <!--カテゴリのデータを取得-->
+                        <?php
+                            $cat=get_the_category();
+                            $cat=$cat[0];
+                            $cat_description = $cat->category_description; 
+                        ?>
+                        
+                        <p class="u-page-title--sub"><?php echo $cat->name; ?></p>
                     </div>
                     <article class="p-article--archive">
-                        <h3 class="c-sub-title">小見出しが入ります</h3>
+                        <h3 class="c-sub-title"><?php echo $cat->name; ?></h3>
                         <p class="c-sub-article">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            <?php echo $cat_description; ?>
                         </p>
                         <section class="p-content--archive">
+                        <!--メインループ検索結果出力-->
+                        <?php if(have_posts()): while(have_posts()): the_post(); ?>
+                        <!-- 繰り返す部分(p-card--archive) -->
+                            
                             <section class="p-card--archive">
-                                <img class="c-article-img" src="img/archive-card.jpg" alt="チーズバーガーの画像">
-                                
+                                <?php
+                                    if(has_post_thumbnail()):
+                                        the_post_thumbnail();
+                                    else:
+                                ?>
+                                    <img class="c-article-img" src="<?php echo get_template_directory_uri();?>/img/archive-card.jpg" alt="チーズバーガーの画像">
+                                <?php endif;?>
                                 <article class="p-card--archive--article">
                                     <h3 class="c-content-title c-content-title--archive">
-                                        チーズバーガー
+                                        <?php the_title();?>
                                     </h3>
-                                    <h4 class="c-content-title c-content-title--sub">
-                                        小見出しが入ります
-                                    </h4>
                                     <p class="c-card-article c-card-article--archive">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                        <?php the_content('詳しく見る');?>
                                     </p>
+                                    
                                     <button class="c-button c-button--detail">
                                         詳しく見る
+                                        <a href="<?php the_permalink();?>"></a>
                                     </button>
                                 </article>
-                            </section>
-                        
-                            <section class="p-card--archive">
-                                <img class="c-article-img" src="img/archive-card.jpg" alt="ダブルチーズバーガーの画像">
-                                <article class="p-card--archive--article">
-                                    <h3 class="c-content-title c-content-title--archive">
-                                        ダブルチーズバーガー
-                                    </h3>
-                                    <h4 class="c-content-title c-content-title--sub">
-                                        小見出しが入ります
-                                    </h4>
-                                    <p class="c-card-article c-card-article--archive">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <button class="c-button c-button--detail">
-                                        詳しく見る
-                                    </button>
-                                </article>
-                            </section>
-                        
-                            <section class="p-card--archive">
-                                <img class="c-article-img" src="img/archive-card.jpg" alt="スペシャルチーズバーガーの画像">
-                                <article class="p-card--archive--article">
-                                    <h3 class="c-content-title c-content-title--archive">
-                                        スペシャルチーズバーガー
-                                    </h3>
-                                    <h4 class="c-content-title c-content-title--sub">
-                                        小見出しが入ります
-                                    </h4>
-                                    <p class="c-card-article c-card-article--archive">
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </p>
-                                    <button class="c-button c-button--detail">
-                                        詳しく見る
-                                    </button>
-                                </article>
-                            </section>
+                            </section>                   
+                        <?php endwhile;endif;wp_reset_query(); ?>
+                        <!--メインループ終わり-->
                         </section>
                     </article>      
                 </div> 

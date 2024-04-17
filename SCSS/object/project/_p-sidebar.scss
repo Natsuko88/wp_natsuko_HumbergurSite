@@ -6,7 +6,7 @@
     z-index:100;
 
     .c-button--menu{
-        margin: 84px 46px;
+        margin: 84px 30px;
         font-size: 3.4rem;
         line-height:2;
         display:none;
@@ -32,7 +32,7 @@
         font-weight: 400;
     }
 
-    li strong{
+    .menu-item-has-children{
         font-weight: 700;
     }
 

@@ -477,7 +477,7 @@ form .p-serchform {
   /*メニューボタンここまで*/
 }
 .p-sidebar .c-button--menu {
-  margin: 84px 46px;
+  margin: 84px 30px;
   font-size: 3.4rem;
   line-height: 2;
   display: none;
@@ -499,7 +499,7 @@ form .p-serchform {
   white-space: nowrap;
   font-weight: 400;
 }
-.p-sidebar li strong {
+.p-sidebar .menu-item-has-children {
   font-weight: 700;
 }
 .p-sidebar .c-button--menu.is-active {
@@ -632,7 +632,7 @@ form .p-serchform {
   padding: 5px 0;
   flex-direction: column;
 }
-.p-card--archive .c-article-img {
+.p-card--archive img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -644,7 +644,7 @@ form .p-serchform {
   .p-card--archive {
     flex-direction: row;
   }
-  .p-card--archive .c-article-img {
+  .p-card--archive img {
     width: 50%;
   }
 }
@@ -660,12 +660,18 @@ form .p-serchform {
   font-size: 20px;
   margin: 10px;
 }
-.p-card--archive--article .c-content-title--sub {
+.p-card--archive--article h4 {
   margin: 5px 10px;
   font-size: 16px;
+  color: #FFFFFF;
 }
-.p-card--archive--article .c-card-article--archive {
+.p-card--archive--article p {
   margin: 10px 10px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.p-card--archive--article .wp-block-read-more {
+  display: none;
 }
 .p-card--archive--article .c-button--detail {
   height: 40px;
@@ -684,11 +690,11 @@ form .p-serchform {
     font-size: 30px;
     margin: 20px;
   }
-  .p-card--archive--article .c-content-title--sub {
+  .p-card--archive--article h4 {
     margin: 10px 20px;
     font-size: 24px;
   }
-  .p-card--archive--article .c-card-article--archive {
+  .p-card--archive--article p {
     margin: 20px 20px;
   }
   .p-card--archive--article .c-button--detail {
