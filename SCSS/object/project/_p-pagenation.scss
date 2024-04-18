@@ -1,46 +1,35 @@
 @use "../../foundation/f-index" as f;
 
-.p-pagenation{
+.wp-pagenavi{
     display: flex;
     color:f.$color-gray;
     justify-content: space-between;
     
-
-    .c-pagenation-head{
-        display: none;
+    .pages{
+        display:none;
+        border:none;
     }
-
-    .c-button--pagenation{
-        margin:10px;
-    }
-
-    .p-pagenation-list{
-        display: none;
-    }
-
-    .c-pagenation,.u-pagenation{
-        margin:10px;
-        padding:10px;
+    .current{
+        display:none;
+        background-color: f.$color-darkbrown;
+        color: f.$color-white;
     }
     
 }
 /*tab*/
 @include f.tab{
-    .p-pagenation{
+    .wp-pagenavi{
+        display:flex;
         align-items: center;
         justify-content: center;
         margin:20px;
-        .p-pagenation-list{
-            display: flex;
-            margin:10px;
-        }
-        .c-pagenation-head{
-            display: block;
-        }
-        .c-button--page-text{
-            display:none;
+        
+        .pages{
+            display:block;
         }
 
-
+        .current{
+            display:block;
+        }
     }
 }

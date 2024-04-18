@@ -52,28 +52,8 @@
                     </article>      
                 </div> 
                 <section class="p-pagenation">
-                    <p class="c-pagenation-head">page 1/10</p>
-                    <button class="c-button c-button--pagenation">
-                        <img src="img/pagenation.png" alt="ページングボタン">
-                        <p class="c-button c-button--page-text">前へ</p>
-                    </button>
-                    
-                    <ul class="p-pagenation-list">
-                        <li class="c-pagenation u-pagenation">1<li>
-                        <li class="c-pagenation">2</li>
-                        <li class="c-pagenation">3</li>
-                        <li class="c-pagenation">4</li>
-                        <li class="c-pagenation">5</li>
-                        <li class="c-pagenation">6</li>
-                        <li class="c-pagenation">7</li>
-                        <li class="c-pagenation">8</li>
-                        <li class="c-pagenation">9</li>
-                    </ul>
-                    
-                    <button class="c-button c-button--pagenation u-button--pagenation">
-                        <p class="c-button c-button--page-text">次へ</p>
-                        <img src="img/pagenation.png" alt="ページングボタン">
-                    </button>
+                    <!--ページネーション-->
+                    <?php wp_pagenavi(); ?>
                 </section>
                 
             </main>

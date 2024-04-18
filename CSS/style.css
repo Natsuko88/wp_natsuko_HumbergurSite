@@ -722,41 +722,34 @@ form .p-serchform {
   border-radius: 100vh;
 }
 
-.p-pagenation {
+.wp-pagenavi {
   display: flex;
   color: #707070;
   justify-content: space-between;
 }
-.p-pagenation .c-pagenation-head {
+.wp-pagenavi .pages {
   display: none;
+  border: none;
 }
-.p-pagenation .c-button--pagenation {
-  margin: 10px;
-}
-.p-pagenation .p-pagenation-list {
+.wp-pagenavi .current {
   display: none;
-}
-.p-pagenation .c-pagenation, .p-pagenation .u-pagenation {
-  margin: 10px;
-  padding: 10px;
+  background-color: #3C2B1C;
+  color: #FFFFFF;
 }
 
 /*tab*/
 @media screen and (min-width: 480px) {
-  .p-pagenation {
+  .wp-pagenavi {
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px;
   }
-  .p-pagenation .p-pagenation-list {
-    display: flex;
-    margin: 10px;
-  }
-  .p-pagenation .c-pagenation-head {
+  .wp-pagenavi .pages {
     display: block;
   }
-  .p-pagenation .c-button--page-text {
-    display: none;
+  .wp-pagenavi .current {
+    display: block;
   }
 }
 .c-pagenation {
