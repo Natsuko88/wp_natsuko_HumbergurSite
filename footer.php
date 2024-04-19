@@ -1,6 +1,6 @@
 
 <footer class="l-footer p-footer">
-<?php wp_nav_menu( array( 'theme_location' => 'footer-nav' ) ); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'footer_nav' ) ); ?>
     <p class="p-copyright"><small>Copyright:RaiseTech</small></p>
 </footer>
 <?php wp_footer(); ?>

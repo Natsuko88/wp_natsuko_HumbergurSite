@@ -12,12 +12,12 @@
                             $cat_description = $cat->category_description; 
                         ?>
                         
-                        <p class="u-page-title--sub"><?php echo $cat->name; ?></p>
+                        <p class="u-page-title--sub"><?php echo esc_html($cat->name); ?></p>
                     </div>
                     <article class="p-article--archive">
-                        <h3 class="c-sub-title"><?php echo $cat->name; ?></h3>
+                        <h3 class="c-sub-title"><?php echo esc_html($cat->name); ?></h3>
                         <p class="c-sub-article">
-                            <?php echo $cat_description; ?>
+                            <?php echo esc_html($cat_description); ?>
                         </p>
                         <section class="p-content--archive">
                         <!--メインループ検索結果出力-->
@@ -30,7 +30,7 @@
                                         the_post_thumbnail();
                                     else:
                                 ?>
-                                    <img class="c-article-img" src="<?php echo get_template_directory_uri();?>/img/archive-card.jpg" alt="チーズバーガーの画像">
+                                    <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri());?>/img/archive-card.jpg" alt="チーズバーガーの画像">
                                 <?php endif;?>
                                 <article class="p-card--archive--article">
                                     <h3 class="c-content-title c-content-title--archive">
