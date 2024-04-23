@@ -1,37 +1,83 @@
 @use "../../foundation/f-index" as f;
 
 .p-article--single{
-    margin: 4vw;
+    position:relative;
+    margin: 0 4vw;
+    top:-225px;
 
-    .c-sub-title{
-        font-size: 28px;
+    .wp-block-cover{
+        width: 100vw;
+        margin: 0 calc(50% - 50vw);
+    }
+
+    h2{
+        font-size: 2.8rem;
     }
 
     h2,h3,h4,h5{
         line-height: 1.5;
     }
-    h3,h4,h5,h6{
+    h2,h3,h4,h5,h6{
         margin:30px 0;
     }
-    .c-sub-article{
+    p{
         margin:30px 0 60px 0;
         line-height: 1.5;
         font-weight: 400;
     }
+    .aligncenter{
+        margin-top:30px;
+    }
+    .wp-block-buttons {
+        
+        a{
+            width:92vw;
+            height: 100px;
+            padding:30px 0;
+            margin-bottom: 30px;
+            background-color: f.$color-lightgray;
+            color: f.$color-gray;
+            border-radius: 10px;
+            border:1px solid;
+            border-color: linear-gradient(f.$color-darkbage, f.$color-gray); 
+        }
+    }
+    
 }
 
 /*tab*/
 @include f.tab{
     .p-article--single{
-        .c-sub-title{
-            font-size: 36px;
+        top:-505px;
+
+        h2{
+            font-size: 3.6rem;
         }
         h3{
-            font-size: 28px;
+            font-size: 2.8rem;
         }
         h4,h5,h6{
-            font-size: 20px;
+            font-size: 2.0rem;
+        }
+        .wp-block-button a{
+            width:50vw;
         }
 
+    }
+}
+
+/*pc*/
+@include f.pc{
+    .p-article--single{
+        top:-285px;
+        .wp-block-cover{
+            width: 81vw;
+        }
+        .wp-block-button a{
+            width:33vw;
+        }
+        .aligncenter{
+            margin-top:60px;
+        }
     }
 }

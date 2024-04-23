@@ -1,12 +1,12 @@
 @use "../../foundation/f-index" as f;
 
-.p-quote{
+blockquote{
     background-color: f.$color-bluegray;
     padding:7%;
     margin:30px 0;
     font-weight: 400;
 
-    .c-source-quote{
+    cite{
         padding:30px 0 0 0;
     }
 }

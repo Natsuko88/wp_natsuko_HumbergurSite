@@ -814,42 +814,83 @@ form .p-serchform {
   }
 }
 .p-article--single {
-  margin: 4vw;
+  position: relative;
+  margin: 0 4vw;
+  top: -225px;
 }
-.p-article--single .c-sub-title {
-  font-size: 28px;
+.p-article--single .wp-block-cover {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+.p-article--single h2 {
+  font-size: 2.8rem;
 }
 .p-article--single h2, .p-article--single h3, .p-article--single h4, .p-article--single h5 {
   line-height: 1.5;
 }
-.p-article--single h3, .p-article--single h4, .p-article--single h5, .p-article--single h6 {
+.p-article--single h2, .p-article--single h3, .p-article--single h4, .p-article--single h5, .p-article--single h6 {
   margin: 30px 0;
 }
-.p-article--single .c-sub-article {
+.p-article--single p {
   margin: 30px 0 60px 0;
   line-height: 1.5;
   font-weight: 400;
 }
+.p-article--single .aligncenter {
+  margin-top: 30px;
+}
+.p-article--single .wp-block-buttons a {
+  width: 92vw;
+  height: 100px;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  background-color: #DED8D3;
+  color: #707070;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: linear-gradient(#F2EDE9, #707070);
+}
 
 /*tab*/
 @media screen and (min-width: 480px) {
-  .p-article--single .c-sub-title {
-    font-size: 36px;
+  .p-article--single {
+    top: -505px;
+  }
+  .p-article--single h2 {
+    font-size: 3.6rem;
   }
   .p-article--single h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
   .p-article--single h4, .p-article--single h5, .p-article--single h6 {
-    font-size: 20px;
+    font-size: 2rem;
+  }
+  .p-article--single .wp-block-button a {
+    width: 50vw;
   }
 }
-.p-quote {
+/*pc*/
+@media screen and (min-width: 1025px) {
+  .p-article--single {
+    top: -285px;
+  }
+  .p-article--single .wp-block-cover {
+    width: 81vw;
+  }
+  .p-article--single .wp-block-button a {
+    width: 33vw;
+  }
+  .p-article--single .aligncenter {
+    margin-top: 60px;
+  }
+}
+blockquote {
   background-color: #F5F5F5;
   padding: 7%;
   margin: 30px 0;
   font-weight: 400;
 }
-.p-quote .c-source-quote {
+blockquote cite {
   padding: 30px 0 0 0;
 }
 
@@ -884,25 +925,25 @@ form .p-serchform {
   flex-direction: row-reverse;
 }
 
-.p-glid {
+.wp-block-columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   width: 92vw;
   margin-top: 30px;
 }
-.p-glid .p-item {
+.wp-block-columns .p-item {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
-.p-glid .p-item img {
+.wp-block-columns .p-item img {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (min-width: 1025px) {
-  .p-glid {
+  .wp-block-columns {
     grid-template-columns: 1fr 1fr 1fr;
     width: 72vw;
   }
@@ -923,26 +964,25 @@ form .p-serchform {
     margin: 30px;
   }
 }
-.p-list {
+ol {
   margin-bottom: 40px;
-}
-.p-list .p-list--number {
   font-weight: 400;
   margin: 20px 0;
 }
-.p-list .p-list--number .p-list--number--li {
+ol li {
   list-style: decimal;
+  line-height: 1.5;
+  margin-left: 6vw;
+}
+
+ul {
+  font-weight: 400;
+  margin: 20px 0;
+}
+ul li {
+  list-style: none;
   line-height: 1.5;
   margin-left: 4vw;
-}
-.p-list .p-list--number--i {
-  font-weight: 400;
-  margin: 20px 0;
-}
-.p-list .p-list--number--i .p-list--number--li {
-  list-style: decimal;
-  line-height: 1.5;
-  margin-left: 8vw;
 }
 
 .p-list {
@@ -967,33 +1007,24 @@ form .p-serchform {
   margin-left: 6vw;
 }
 
-.p-tag-text {
+.wp-block-code {
   background-color: #F5F5F5;
   line-height: 1.5;
   font-weight: 400;
+  margin: 30px 0;
 }
 
-.p-table, tr, th {
-  border: 1px solid #000000;
-  border-collapse: collapse;
-}
-
-.p-table {
+.wp-block-table {
   margin: 30px 0;
   width: 92vw;
 }
-.p-table .p-tableh-1 {
+.wp-block-table .p-tableh-1 {
   width: 33%;
-}
-.p-table th {
   font-weight: 400;
-  height: 77px;
-  text-align: start;
-  padding: 0 20px;
 }
 
 @media screen and (min-width: 1025px) {
-  .p-table {
+  .wp-block-table {
     width: 72vw;
   }
 }
@@ -1018,10 +1049,6 @@ form .p-serchform {
 }
 
 .p-tophead--page {
-  background-image: url(../img/black-steel-lamp-post-1070945.jpg);
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 225px;
   display: flex;
   align-items: center;
@@ -1029,6 +1056,16 @@ form .p-serchform {
 .p-tophead--page .c-page-title {
   margin-left: 4vw;
   font-size: 36px;
+  z-index: 10;
+}
+
+.wp-block-cover {
+  margin: 0;
+  padding: 0;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
 }
 
 @media screen and (min-width: 480px) {
@@ -1038,9 +1075,15 @@ form .p-serchform {
   .p-tophead--page .c-page-title {
     font-size: 60px;
   }
+  .wp-block-cover {
+    height: 505px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-tophead--page {
+    height: 285px;
+  }
+  .wp-block-cover {
     height: 285px;
   }
 }

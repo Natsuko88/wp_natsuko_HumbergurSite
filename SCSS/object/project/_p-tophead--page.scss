@@ -1,8 +1,5 @@
 @use "../../foundation/f-index" as f;
 .p-tophead--page{
-    background-image: url(../img/black-steel-lamp-post-1070945.jpg);
-    background-size: cover;
-    object-fit: cover;
     height:225px;
     display: flex;
     align-items: center;
@@ -10,7 +7,16 @@
     .c-page-title{
         margin-left: 4vw;
         font-size: 36px;
+        z-index:10;
     }
+}
+
+.wp-block-cover{
+    margin:0;
+    padding:0;
+    height: 225px;
+    object-fit: cover;
+    z-index:1;
 }
 //tab
 @include f.tab{
@@ -20,11 +26,18 @@
             font-size: 60px;
         }
     }
+    .wp-block-cover{
+        height:505px;
+    }
 }
+
 
 //pc
 @include f.pc{
     .p-tophead--page{
         height: 285px;
+    }
+    .wp-block-cover{
+        height:285px;
     }
 }

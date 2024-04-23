@@ -30,7 +30,7 @@
                                         the_post_thumbnail();
                                     else:
                                 ?>
-                                    <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri());?>/img/archive-card.jpg" alt="チーズバーガーの画像">
+                                    <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri());?>>
                                 <?php endif;?>
                                 <article class="p-card--archive--article">
                                     <h3 class="c-content-title c-content-title--archive">
@@ -41,18 +41,23 @@
                                     </p>
                                     
                                     <button class="c-button c-button--detail">
-                                        詳しく見る
-                                        <a href="<?php the_permalink();?>"></a>
+                                        <a href="<?php the_permalink();?>">
+                                            <?php _e('詳しく見る','natsukoburger') ?>
+                                        </a>
                                     </button>
                                 </article>
                             </section>                   
-                        <?php endwhile;endif;wp_reset_query(); ?>
+                        <?php endwhile; ?>
+                        <!--投稿データがない場合-->
+                        <?php else: ?>
+                        <p>表示する記事がありません</p>
+                        <?php endif; ?>
                         <!--メインループ終わり-->
                         </section>
                     </article>      
                 </div> 
                 <section class="p-pagenation">
-                    <!--ページネーション-->
+                    <!--ページネーション（サブループ扱い？）-->
                     <?php wp_pagenavi(); ?>
                 </section>
                 

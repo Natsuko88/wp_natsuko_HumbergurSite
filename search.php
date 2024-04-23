@@ -5,7 +5,7 @@
                         <h2 class="c-page-title">
                             Serch:
                         </h2>
-                        <?php echo get_search_query(); ?>
+                        <?php echo esc_html(get_search_query()); ?>
                     </div>
                     <article class="p-article--archive">
                         <h3 class="c-sub-title">小見出しが入ります</h3>
@@ -16,7 +16,6 @@
                             <!--メインループ検索結果出力-->
                             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                             <!-- 繰り返す部分(p-card--archive) -->
-                                
                                 <section class="p-card--archive">
                                     <?php
                                         if(has_post_thumbnail()):
