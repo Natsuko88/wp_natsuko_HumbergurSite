@@ -29,12 +29,13 @@
                                             <?php the_title();?>
                                         </h3>
                                         <p class="c-card-article c-card-article--archive">
-                                            <?php the_content('詳しく見る');?>
+                                            <?php the_excerpt();?>
                                         </p>
                                         
                                         <button class="c-button c-button--detail">
-                                            詳しく見る
-                                            <a href="<?php the_permalink();?>"></a>
+                                            <a href="<?php the_permalink();?>">
+                                            <?php _e('詳しく見る','natsukoburger') ?>
+                                            </a>
                                         </button>
                                     </article>
                                 </section>                   

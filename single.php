@@ -5,6 +5,7 @@
                         <h1 class="c-page-title">
                             <?php the_title(); ?>
                         </h1>
+                        <?php the_post_thumbnail(); ?>
                     </div>
                     <article class="p-article--single">
                         <?php the_content(); ?>

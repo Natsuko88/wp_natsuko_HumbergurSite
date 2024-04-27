@@ -8,65 +8,71 @@
             </h2>
         </div>
         <article class="p-article--front">
-            <section class="p-content--front--to">
-                <h2 class="c-content-title c-content-title--to">
-                    Take Out
-                </h2>
-                <section class="p-card-flex">
-                    <article class="p-card--front">
-                        <h3 class="c-card-title">
-                            Take OUT
-                        </h3>
-                        <p class="c-card-article c-cardarticle--front">
-                            当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウト
-                            で利用できる商品を掲載しています当店のテイクアウトで利用できる商品を
-                            掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
-                            のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
-                        </p>
-                    </article>
-                    <article class="p-card--front">
-                        <h3 class="c-card-title c-card-title--to">
-                            Take OUT
-                        </h3>
-                        <p class="c-card-article c-cardarticle--front">
-                            当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウト
-                            で利用できる商品を掲載しています当店のテイクアウトで利用できる商品を
-                            掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
-                            のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
-                        </p>
-                    </article>
+            <a href="<?php echo esc_url(get_category_link(get_cat_ID('Take Out'))); ?>"> 
+                <section class="p-content--front--to">
+                
+                    <h2 class="c-content-title c-content-title--to">
+                        Take Out
+                    </h2>
+                    <section class="p-card-flex">
+                        <article class="p-card--front">
+                            <h3 class="c-card-title">
+                                Take OUT
+                            </h3>
+                            <p class="c-card-article c-cardarticle--front">
+                                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウト
+                                で利用できる商品を掲載しています当店のテイクアウトで利用できる商品を
+                                掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
+                                のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
+                            </p>
+                        </article>
+                        <article class="p-card--front">
+                            <h3 class="c-card-title c-card-title--to">
+                                Take OUT
+                            </h3>
+                            <p class="c-card-article c-cardarticle--front">
+                                当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウト
+                                で利用できる商品を掲載しています当店のテイクアウトで利用できる商品を
+                                掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
+                                のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
+                            </p>
+                        </article>
+                    </section>
                 </section>
-            </section>
-            <section class="p-content--front--ei">
-                <h2 class="c-content-title c-content-title--ei">
-                    Eat In
-                </h2>
-                <section class="p-card-flex">               
-                    <article class="p-card--front">
-                        <h3 class="c-card-title">
-                            Eat In
-                        </h3>
-                        <p class="c-card-article c-cardarticle--front">
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                        </p>
-                    </article>
-                    <article class="p-card--front">
-                        <h3 class="c-card-title c-card-title--ei">
-                            Eat In
-                        </h3>
-                        <p class="c-card-article c-cardarticle--front">
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
-                            店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+            </a>
+            <a href="<?php echo esc_url(get_category_link(get_cat_ID('Eat In')));?>">
+                <section class="p-content--front--ei">
+                    
+                    <h2 class="c-content-title c-content-title--ei">
+                        Eat In
+                    </h2>
+                    <section class="p-card-flex">               
+                        <article class="p-card--front">
+                            <h3 class="c-card-title">
+                                Eat In
+                            </h3>
+                            <p class="c-card-article c-cardarticle--front">
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                            </p>
+                        </article>
+                        <article class="p-card--front">
+                            <h3 class="c-card-title c-card-title--ei">
+                                Eat In
+                            </h3>
+                            <p class="c-card-article c-cardarticle--front">
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
+                                店内でお食事いただけるメニューです店内でお食事いただけるメニューです
 
-                        </p>
-                    </article>
+                            </p>
+                        </article>
+                    </section>
                 </section>
-            </section>
+            </a>
         </article><!--article display:flex;-->      
     </div>   
     <div class="l-location p-location">

@@ -12,12 +12,12 @@
                             $cat_description = $cat->category_description; 
                         ?>
                         
-                        <p class="u-page-title--sub"><?php echo esc_html($cat->name); ?></p>
+                        <p class="u-page-title--sub"><?php single_term_title(); ?></p>
                     </div>
                     <article class="p-article--archive">
-                        <h3 class="c-sub-title"><?php echo esc_html($cat->name); ?></h3>
+                        <h3 class="c-sub-title"><?php single_term_title(); ?></h3>
                         <p class="c-sub-article">
-                            <?php echo esc_html($cat_description); ?>
+                            <?php echo esc_html(category_description()); ?>
                         </p>
                         <section class="p-content--archive">
                         <!--メインループ検索結果出力-->
@@ -37,7 +37,7 @@
                                         <?php the_title();?>
                                     </h3>
                                     <p class="c-card-article c-card-article--archive">
-                                        <?php the_content('詳しく見る');?>
+                                       <?php the_excerpt();?>
                                     </p>
                                     
                                     <button class="c-button c-button--detail">
