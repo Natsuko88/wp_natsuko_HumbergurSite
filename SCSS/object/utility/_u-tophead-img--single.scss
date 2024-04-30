@@ -1,0 +1,25 @@
+@use "../../foundation/f-index" as f;
+.u-tophead-img--single{
+    img{
+        object-fit: cover;
+        height:225px;
+        width:100vw;
+        margin: 0 calc(50% - 50vw);
+    }
+}
+//tab
+@include f.tab{
+    .u-tophead-img--single{
+        img{
+            height:505px;
+        }
+    }
+}
+//pc
+@include f.pc{
+    .u-tophead-img--single{
+        img{
+            height: 285px;
+        } 
+    }
+}

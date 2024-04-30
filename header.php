@@ -6,7 +6,7 @@
     <meta name="description" content="RaiseTechの最終課題です">
     <?php wp_head();?>
 </head>
-<body<?php body_class(); ?>>
+<body <?php body_class(); ?>>
     <div class="c-wrapper-wide">
         <div class="c-wrapper-main">
             <header class="l-header p-header">

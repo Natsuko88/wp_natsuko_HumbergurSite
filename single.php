@@ -4,10 +4,12 @@
                     <div class="p-tophead--single">
                         <h1 class="c-page-title">
                             <?php the_title(); ?>
-                        </h1>
-                        <?php the_post_thumbnail(); ?>
+                        </h1>   
                     </div>
                     <article class="p-article--single">
+                        <figure class="u-tophead-img--single">
+                            <?php the_post_thumbnail(); ?>
+                        </figure>
                         <?php the_content(); ?>
                     </article>      
                 </div> 
