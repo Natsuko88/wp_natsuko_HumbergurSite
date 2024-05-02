@@ -17,13 +17,11 @@
                             <?php if(have_posts()): while(have_posts()): the_post(); ?>
                             <!-- 繰り返す部分(p-card--archive) -->
                                 <section class="p-card--archive">
-                                    <?php
-                                        if(has_post_thumbnail()):
-                                            the_post_thumbnail();
-                                        else:
-                                    ?>
-                                        <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri());?>/img/archive-card.jpg" alt="チーズバーガーの画像">
-                                    <?php endif;?>
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php the_post_thumbnail(); ?>
+                                    <?php else: ?>
+                                        <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri()); ?>/img/archive-card.jpg">
+                                <?php endif; ?>
                                     <article class="p-card--archive--article">
                                         <h3 class="c-content-title c-content-title--archive">
                                             <?php the_title();?>
