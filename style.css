@@ -9,4 +9,16 @@ Tags: humbergurshop,shopsite
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: natsukohumbergur
+Copyright notice: GNU General Public License
+Tested up to:5.0
+Requires PHP: 8.1
 */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

@@ -7,6 +7,7 @@
     <?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
     <div class="c-wrapper-wide">
         <div class="c-wrapper-main">
             <header class="l-header p-header">

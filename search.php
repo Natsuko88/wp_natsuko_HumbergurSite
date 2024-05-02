@@ -34,7 +34,7 @@
                                         
                                         <button class="c-button c-button--detail">
                                             <a href="<?php the_permalink();?>">
-                                            <?php _e('詳しく見る','natsukoburger') ?>
+                                            <?php _e('詳しく見る','natsukohumbergur') ?>
                                             </a>
                                         </button>
                                     </article>

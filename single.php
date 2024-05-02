@@ -6,14 +6,14 @@
                             <?php the_title(); ?>
                         </h1>   
                     </div>
-                    <article class="p-article--single">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class('p-article--single'); ?> >
                         <figure class="u-tophead-img--single">
                             <?php the_post_thumbnail(); ?>
                         </figure>
                         <?php the_content(); ?>
+                        <?php wp_link_pages(); ?>
                     </article>      
-                </div> 
-                
+                </div>
             </main>
         </div><!--wrapper-main-->
         <?php get_sidebar();?>

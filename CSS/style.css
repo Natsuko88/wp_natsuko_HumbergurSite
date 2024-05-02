@@ -685,9 +685,6 @@ form .p-serchform {
 
 /*pc*/
 @media screen and (min-width: 1025px) {
-  .p-card--archive--article {
-    padding: 40px 40px;
-  }
   .p-card--archive--article .c-content-title--archive {
     font-size: 30px;
     margin: 20px;
@@ -833,6 +830,9 @@ form .p-serchform {
 }
 .p-article--single h2, .p-article--single h3, .p-article--single h4, .p-article--single h5, .p-article--single h6 {
   margin: 30px 0;
+}
+.p-article--single .wp-block-pullquote {
+  border: none;
 }
 .p-article--single p {
   margin: 30px 0 60px 0;

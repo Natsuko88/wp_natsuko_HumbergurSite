@@ -7,7 +7,7 @@
                 ダミーサイト
             </h2>
         </div>
-        <article class="p-article--front">
+        <div class="p-article--front">
             <a href="<?php echo esc_url(get_category_link(get_cat_ID('Take Out'))); ?>"> 
                 <section class="p-content--front--to">
                 
@@ -15,7 +15,7 @@
                         Take Out
                     </h2>
                     <section class="p-card-flex">
-                        <article class="p-card--front">
+                        <div class="p-card--front">
                             <h3 class="c-card-title">
                                 Take OUT
                             </h3>
@@ -25,8 +25,8 @@
                                 掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
                                 のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
                             </p>
-                        </article>
-                        <article class="p-card--front">
+                        </div>
+                        <div class="p-card--front">
                             <h3 class="c-card-title c-card-title--to">
                                 Take OUT
                             </h3>
@@ -36,7 +36,7 @@
                                 掲載しています当店のテイクアウトで利用できる商品を掲載しています当店
                                 のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで
                             </p>
-                        </article>
+                        </div>
                     </section>
                 </section>
             </a>
@@ -47,7 +47,7 @@
                         Eat In
                     </h2>
                     <section class="p-card-flex">               
-                        <article class="p-card--front">
+                        <div class="p-card--front">
                             <h3 class="c-card-title">
                                 Eat In
                             </h3>
@@ -57,8 +57,8 @@
                                 店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                                 店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                             </p>
-                        </article>
-                        <article class="p-card--front">
+                        </div>
+                        <div class="p-card--front">
                             <h3 class="c-card-title c-card-title--ei">
                                 Eat In
                             </h3>
@@ -69,21 +69,21 @@
                                 店内でお食事いただけるメニューです店内でお食事いただけるメニューです
 
                             </p>
-                        </article>
+                        </div>
                     </section>
                 </section>
             </a>
-        </article><!--article display:flex;-->      
+        </div><!--article display:flex;-->      
     </div>   
     <div class="l-location p-location">
-        <article class="p-location-content">
+        <div class="p-location-content">
             <h2 class="c-content-title">
                 見出しが入ります
             </h2>
             <p class="c-location-article">
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
             </p>
-        </article>
+        </div>
     </div>
 </main>
 </div><!--wrapper-main-->

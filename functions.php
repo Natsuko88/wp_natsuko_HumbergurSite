@@ -10,18 +10,24 @@
         ));
         add_theme_support('title-tag');
         add_theme_support('post-thumbnails');
-        add_theme_support('menus');
         register_nav_menus(array(
-            'footer_nav' =>esc_html__('footer navigation','natsuko_humbergur'),
-            'category_nav' =>esc_html__('category navigation','natsuko_humbergur'),
+            'footer_nav' =>esc_html__('footer navigation','natsukohumbergur'),
+            'category_nav' =>esc_html__('category navigation','natsukohumbergur'),
         ));
         add_theme_support('editor-styles');
+        add_theme_support( 'automatic-feed-links' );
+        add_theme_support( 'custom-header'); 
+        add_theme_support( "wp-block-styles" );
+        add_theme_support( "responsive-embeds" );
+        add_theme_support( "custom-logo");
+        add_theme_support( "align-wide" );
+        add_theme_support( "custom-background" );
         add_editor_style();
     }
     add_action('after_setup_theme','custom_theme_support');
 
     //タイトル出力
-    function natsuko_humbergur_title($title){
+    function natsukohumbergur_title($title){
         if(is_front_page()&&is_home()){//トップページなら
             $title=get_bloginfo('name','display');
         }elseif(is_singular()){//シングルページなら
@@ -29,7 +35,7 @@
         }
             return $title;
     }
-    add_filter('pre_get_document_title','natsuko_humbergur_title');
+    add_filter('pre_get_document_title','natsukohumbergur_title');
 
 
     //script,style
@@ -44,18 +50,3 @@
     }
     add_action('wp_enqueue_scripts','natsukohumbergur_script');
     
-    //ウィジェット
-    function natsukohumbergur_widgets_init() {
-        register_sidebar (
-            array(
-                'name'          => 'カテゴリーウィジェット',
-                'id'            => 'category_widget',
-                'description'   => 'カテゴリー用ウィジェットです',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-                'after_title'   => "</h2>\n",
-            )
-        );
-    }
-    add_action( 'widgets_init', 'natsukohumbergur_widgets_init' );

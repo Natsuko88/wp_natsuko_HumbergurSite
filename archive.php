@@ -14,7 +14,7 @@
                         
                         <p class="u-page-title--sub"><?php single_term_title(); ?></p>
                     </div>
-                    <article class="p-article--archive">
+                    <div class="p-article--archive">
                         <h3 class="c-sub-title"><?php single_term_title(); ?></h3>
                         <p class="c-sub-article">
                             <?php echo esc_html(category_description()); ?>
@@ -31,8 +31,8 @@
                                     else:
                                 ?>
                                     <img class="c-article-img" src="<?php echo esc_attr(get_template_directory_uri());?>>
-                                <?php endif;?>
-                                <article class="p-card--archive--article">
+                                <?php endif; ?>
+                                <div class="p-card--archive--article">
                                     <h3 class="c-content-title c-content-title--archive">
                                         <?php the_title();?>
                                     </h3>
@@ -42,10 +42,10 @@
                                     
                                     <button class="c-button c-button--detail">
                                         <a href="<?php the_permalink();?>">
-                                            <?php _e('詳しく見る','natsukoburger') ?>
+                                            <?php _e('詳しく見る','natsukohumbergur') ?>
                                         </a>
                                     </button>
-                                </article>
+                                </div>
                             </section>                   
                         <?php endwhile; ?>
                         <!--投稿データがない場合-->
@@ -54,7 +54,7 @@
                         <?php endif; ?>
                         <!--メインループ終わり-->
                         </section>
-                    </article>      
+                    </div>      
                 </div> 
                 <section class="p-pagenation">
                     <!--ページネーション（サブループ扱い？）-->
