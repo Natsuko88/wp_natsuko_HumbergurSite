@@ -35,16 +35,4 @@
     .menu-item-has-children{
         font-weight: 700;
     }
-
-    .c-button--menu.is-active{
-        /*Menuのみ消す*/
-        visibility: none;
-        left:80%;
-        position: relative;
-        z-index:110;
-        margin: 10px;
-        width: 100%;
-
-    }
-    /*メニューボタンここまで*/
 }

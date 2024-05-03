@@ -1,0 +1,30 @@
+@use "../../foundation/f-index" as f;
+
+.p-content--front{
+    background-size: cover;
+    max-width:f.$tab;
+    margin:10px;
+    padding:10px 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+
+}
+.p-content--front--ei{
+    background-image: url(../img/oneburgerandpotate.jpg);
+}
+.p-content--front--to{
+    background-image: url(../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
+}
+
+@include f.tab{
+    .p-content--front{
+    max-width:617px;
+    margin-left: 20px;
+    padding:10px 5px;
+    }
+    
+}
+
+
+

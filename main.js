@@ -6,8 +6,6 @@ const mBtnSide=lSide.querySelector('.c-button--menu');
 console.log(mBtnSide);
 const bLayer=document.querySelector('.p-black-layer');
 console.log(bLayer);
-const wrapperMain=document.querySelector('.c-wrapper-main');
-console.log(wrapperMain);
 const body=document.querySelector('body');
 
 

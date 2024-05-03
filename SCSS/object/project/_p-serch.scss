@@ -4,11 +4,14 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     
 }
-
-@include f.pc{.p-serch{
-    display:flex;
-    align-items: center;
+//tab
+@include f.tab{
+    
 }
+//pc
+@include f.pc{
+    
 }

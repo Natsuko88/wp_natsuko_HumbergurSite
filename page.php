@@ -10,11 +10,9 @@
                     <?php the_content(); ?>
                     <?php wp_link_pages(); ?>
                     </article>      
-                </div> 
-                
+                </div>   
             </main>
         </div><!--wrapper-main-->
         <?php get_sidebar();?>
     </div><!--wrapper-wide-->
-
     <?php get_footer();?>

@@ -1,5 +1,4 @@
-<?php get_header();?>
-                
+<?php get_header();?>                
 <main class="l-main">
     <div class="l-main-article p-main--front">
         <div class="p-tophead">
@@ -9,7 +8,7 @@
         </div>
         <div class="p-article--front">
             <a href="<?php echo esc_url(get_category_link(get_cat_ID('Take Out'))); ?>"> 
-                <section class="p-content--front--to">
+                <section class="p-content--front p-content--front--to">
                 
                     <h2 class="c-content-title c-content-title--to">
                         Take Out
@@ -41,7 +40,7 @@
                 </section>
             </a>
             <a href="<?php echo esc_url(get_category_link(get_cat_ID('Eat In')));?>">
-                <section class="p-content--front--ei">
+                <section class="p-content--front p-content--front--ei">
                     
                     <h2 class="c-content-title c-content-title--ei">
                         Eat In
@@ -87,9 +86,6 @@
     </div>
 </main>
 </div><!--wrapper-main-->
-
-<?php get_sidebar();?>
-       
+<?php get_sidebar();?>     
 </div><!--wrapper-wide-->
-
 <?php get_footer();?>

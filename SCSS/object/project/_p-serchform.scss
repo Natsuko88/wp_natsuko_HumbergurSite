@@ -2,6 +2,9 @@
 
 .p-serchform{
     position:relative;
+    height:46px;
+    margin:5px 0;
+    width:80vw;
 
     /*虫眼鏡マークは疑似要素*/
     &::before{
@@ -15,7 +18,7 @@
 
     .p-search-form__keyword{
     height:46px;
-    width:40vw;
+    width:50vw;
     background-color: f.$color-white;
     border: 1px solid;
     border-color: f.$color-gray;
@@ -29,10 +32,27 @@ form .p-serchform{
     display:flex;
     align-items: center;
     justify-content: space-between;
+    width:40vw;
+    margin-left: 60px;
 }
-
+.c-button--serch{
+    margin:5px 10px;
+    height:46px;
+    width:15vw;
+}
+//tab
+@include f.tab{
+    form .p-serchform{
+        width:20vw;
+    }
+}
 @include f.pc{
     .p-serchform{
+        width:25vw;
+        
+        .c-button--serch{
+        width:5vw;
+        }
         .p-search-form__keyword{
             width:15vw;
         }
