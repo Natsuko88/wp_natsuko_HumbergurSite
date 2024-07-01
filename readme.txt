@@ -1,0 +1,2 @@
+オンラインスクールRaizeTech WordPress副業コースの最終課題です。
+静的コーディングしたものをWordPress化しました。
